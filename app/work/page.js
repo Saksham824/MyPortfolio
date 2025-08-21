@@ -19,11 +19,11 @@ const projects = [
     live: "https://vid-tube-mu.vercel.app/",
   },
   {
-    title: "Music Player",
-    description: "A music player that fetches tracks from Spotify and play your favourite songs by categories and serch bar.",
+    title: "Spotify Clone",
+    description: "Developed a Spotify-inspired music streaming web application that allows users to search for songs, play tracks, view recent songs, and control playback with next/previous functionality.",
     tech: ["React", "API","Tailwindcss"],
-    link: "https://github.com/Saksham824/Music-Player",
-    live: "https://music-player-sage-five.vercel.app/",
+    link: "https://github.com/Saksham824/Spotify",
+    live: "https://spotify-liart-nu.vercel.app/",
   },
   {
     title: "Video Player",

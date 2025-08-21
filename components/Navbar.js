@@ -30,7 +30,7 @@ export default function Navbar() {
       const now = new Date();
       setTime(
         new Intl.DateTimeFormat("en-GB", {
-          timeZone: "Asia/Jakarta",
+          timeZone: "Asia/Kolkata",
           hour: "2-digit",
           minute: "2-digit",
           second: "2-digit",
@@ -67,9 +67,9 @@ export default function Navbar() {
             </Link>
           ))}
           <Divider />
-          <button className="p-2 rounded-full hover:bg-blue-100 dark:hover:bg-zinc-700 transition-all duration-150">
+          <div className="p-2 rounded-full hover:bg-blue-100 dark:hover:bg-zinc-700 transition-all duration-150">
             <ModeToggle />
-          </button>
+          </div>
         </nav>
 
         {/* Hamburger menu for mobile */}

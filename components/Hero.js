@@ -57,10 +57,10 @@ const projects = [
   {
     emoji: "🎵",
     bg: "bg-yellow-100 dark:bg-yellow-900",
-    title: "Music Player",
-    description: "A music player that fetches tracks from Spotify and play your favourite songs by categories and serch bar.",
+    title: "Spotify Clone",
+    description: "Developed a Spotify-inspired music streaming web application that allows users to search for songs, play tracks, view recent songs, and control playback with next/previous functionality.",
     tech: ["Spotify API", "React"],
-    screenshots: ["/screenshots/musicss1.png", "/screenshots/musicss2.png", "/screenshots/musicss3.png", "/screenshots/musicss4.png"],
+    screenshots: ["/screenshots/musicss1.png", "/screenshots/musicss2.png",],
   },
   {
     emoji: "🎥",
@@ -353,9 +353,9 @@ export default function Hero() {
 
       {/* Project Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-zinc-900 rounded-2xl shadow-2xl max-w-3xl w-full p-6 relative">
-            <button onClick={() => setSelectedProject(null)} className="absolute top-4 right-4 text-zinc-600 dark:text-zinc-300 hover:text-red-500">✕</button>
+        <div className="fixed overflow-y-auto inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
+          <div className="bg-white overflow-y-auto  dark:bg-zinc-900 rounded-2xl shadow-2xl max-w-3xl w-full p-6 relative">
+            <button onClick={() => setSelectedProject(null)} className="fixed top-2 right-8 text-zinc-600 dark:text-zinc-300 hover:text-red-500">✕</button>
             <h2 className="text-2xl font-bold text-zinc-900 dark:text-white">{selectedProject.title}</h2>
             <p className="mt-2 text-zinc-600 dark:text-zinc-400">{selectedProject.description}</p>
             <div className="flex flex-wrap gap-2 mt-4">
